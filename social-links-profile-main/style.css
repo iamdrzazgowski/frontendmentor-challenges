@@ -1,0 +1,98 @@
+:root{
+    --primary-green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 1rem;
+    height: calc(100vh - 2rem);
+    background-color: var(--off-black);
+
+    font-size: 14px;
+    font-family: Inter;
+    color: var(--white);
+}
+
+main {
+    flex: 0 1 21rem;
+}
+
+.person-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: var(--dark-grey);
+    padding: 2rem;
+    border-radius: 0.8rem;
+}
+
+.person-img {
+    text-align: center;
+}
+
+.person-img > img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+p, h1 {
+    text-align: center;
+}
+
+.person-information > p {
+    color: var(--primary-green);
+    font-size: 0.8rem;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.person-information > h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.description {
+    font-weight: 300;
+    font-size: 0.78rem;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+a:link{
+    display: block;
+    flex: 1;
+    font-weight: 600;
+    font-size: 0.75rem;
+    background-color: var(--grey);
+    border-radius: 8px;
+    padding: 0.85rem 0.50rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+}
+
+a:visited {
+    color: var(--white);
+}
+
+a:hover, a:active {
+    background-color: var(--primary-green);
+    color: var(--dark-grey);
+}
