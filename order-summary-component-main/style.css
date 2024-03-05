@@ -1,0 +1,128 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --font-family: "Red Hat Display", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 1rem;
+    height: calc(100vh - 2rem);
+    background-color: var(--pale-blue);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    font-family: var(--font-family);
+    color: var(--desaturated-blue);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: white;
+}
+
+.img-container img {
+    width: 100%;
+    display: block;
+}
+
+h1,
+.description,
+.cancel-order {
+    text-align: center;
+}
+
+h1,
+h2 {
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+.description {
+    line-height: 1.5;
+}
+
+.description,
+.price {
+    font-weight: 600;
+}
+
+.price {
+    margin-top: 2px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.current-plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+
+    background-color: var(--very-pale-blue);
+}
+
+.current-plan > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.plan-details > * {
+    font-size: 0.85rem;
+}
+
+.payment-btn {
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    padding: 1rem 0.75rem;
+    font-family: var(--font-family);
+    width: 100%;
+    border: none;
+    border-radius: 0.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px var(--pale-blue);
+}
+
+.payment-btn:hover {
+    background-color: var(--desaturated-blue);
+}
+
+.cancel-order-link:link,
+.cancel-order-link:visited {
+    font-size: 0.85rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--desaturated-blue);
+}
+
+.change-plan-link:link,
+.change-plan-link:visited {
+    color: var(--bright-blue);
+    font-size: 0.85rem;
+    font-weight: 800;
+}
