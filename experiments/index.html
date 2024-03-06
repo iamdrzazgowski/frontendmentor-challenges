@@ -23,14 +23,15 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                flex-wrap: wrap;
-                gap: 10px 20px; /* gap: vertical | horizontal*/
-                width: 800px;
+                flex-wrap: wrap; /* Jeżeli na szerokoście nie mieszczą się elementy o szerokości flex-basis są przenoszone do następnej lini*/
+                /* gap: 10px 20px; gap: vertical | horizontal */
+                /* width: 800px; */
+                width: 100%;
                 /* padding: 30px; */
                 background-color: blue;
             }
             .box div {
-                flex: 1 0 100px; /* flex-grow: 1; - rosnięcie | flex-shrink: 0; - malenie | flex-basis: 100px; - szerokość lub wysokość w zależności od flex-direction */
+                flex: 0 0 150px; /* flex-grow: 1; - rosnięcie | flex-shrink: 0; - malenie | flex-basis: 100px; - szerokość lub wysokość w zależności od flex-direction */
                 /* width: 100px;  - nie pozwala elementom maleć min-width to 100px*/
                 height: 40px;
                 background-color: red;
