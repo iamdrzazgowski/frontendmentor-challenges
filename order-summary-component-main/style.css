@@ -126,3 +126,9 @@ h2 {
     font-size: 0.85rem;
     font-weight: 800;
 }
+
+@media (max-width: 600px) {
+    body {
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+}

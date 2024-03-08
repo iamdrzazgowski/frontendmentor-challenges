@@ -1,4 +1,4 @@
-:root{
+:root {
     --primary-green: hsl(75, 94%, 57%);
     --white: hsl(0, 0%, 100%);
     --grey: hsl(0, 0%, 20%);
@@ -6,7 +6,7 @@
     --off-black: hsl(0, 0%, 8%);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -48,7 +48,8 @@ main {
     border-radius: 50%;
 }
 
-p, h1 {
+p,
+h1 {
     text-align: center;
 }
 
@@ -75,14 +76,14 @@ p, h1 {
     gap: 0.9rem;
 }
 
-a:link{
+a:link {
     display: block;
     flex: 1;
     font-weight: 600;
     font-size: 0.75rem;
     background-color: var(--grey);
     border-radius: 8px;
-    padding: 0.85rem 0.50rem;
+    padding: 0.85rem 0.5rem;
     text-align: center;
     text-decoration: none;
     color: var(--white);
@@ -93,7 +94,8 @@ a:visited {
     color: var(--white);
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
     background-color: var(--primary-green);
     color: var(--dark-grey);
 }
