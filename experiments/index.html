@@ -32,9 +32,10 @@
                 background-color: blue;
             }
             .box div {
-                flex: 0 0 150px; /* flex-grow: 1; - rosnięcie | flex-shrink: 0; - malenie | flex-basis: 100px; - szerokość lub wysokość w zależności od flex-direction */
+                flex: 1 0 50%; /* flex-grow: 1; - rosnięcie | flex-shrink: 0; - malenie | flex-basis: 100px; - szerokość lub wysokość w zależności od flex-direction */
                 /* width: 100px;  - nie pozwala elementom maleć min-width to 100px*/
                 height: 40px;
+                min-width: 150px;
                 background-color: red;
             }
 
@@ -46,8 +47,6 @@
     </head>
     <body>
         <div class="box">
-            <div></div>
-            <div></div>
             <div></div>
             <div></div>
             <div></div>
