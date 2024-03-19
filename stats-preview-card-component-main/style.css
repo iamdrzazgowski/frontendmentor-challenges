@@ -1,0 +1,130 @@
+:root {
+    --dark-blue: hsl(233, 47%, 7%);
+    --desaturated-blue: hsl(244, 38%, 16%);
+    --sorf-violet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --transparent-white-mp: hsla(0, 0%, 100%, 0.75);
+    --transparent-white-sh: hsla(0, 0%, 100%, 0.6);
+    --font-size: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    min-height: calc(100vh - 4rem);
+    /* height: 100vh; */
+    font-size: var(--font-size);
+    background-color: var(--dark-blue);
+    color: var(--white);
+    font-family: "Inter", sans-serif;
+}
+
+.card {
+    display: flex;
+    max-width: 900px;
+    background-color: var(--desaturated-blue);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card > * {
+    flex: 1 1 50%;
+}
+
+.img-box {
+    position: relative;
+}
+
+.img-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--sorf-violet);
+    opacity: 0.5;
+    filter: brightness(0.7) contrast(2) hue-rotate(5deg);
+}
+
+.img-box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 4rem 3rem 3rem;
+}
+
+.content-box h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.colored-text {
+    color: var(--sorf-violet);
+}
+
+.description {
+    color: var(--transparent-white-sh);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.stats-box {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.stats-box h2 {
+    margin-bottom: 0.2rem;
+}
+
+.stats-box p {
+    color: var(--transparent-white-sh);
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 960px) {
+    .card {
+        flex-direction: column-reverse;
+        max-width: 600px;
+    }
+
+    .img-box {
+        flex-basis: 200px;
+    }
+
+    .content-box {
+        padding: 2rem 1rem;
+    }
+
+    .stats-box {
+        margin-top: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2,
+    h1,
+    .description {
+        text-align: center;
+    }
+}
