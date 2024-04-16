@@ -1,0 +1,56 @@
+:root {
+    --cyan: #2ab2af;
+    --light-cyan: #5cbcbb;
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-grey: hsl(204, 43%, 93%);
+    --grayishblue: hsl(218, 22%, 67%);
+
+    --font-size: 16px;
+    --ff-karla: "Karla", sans-serif;
+    --fw-light: 400;
+    --fw-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 5rem;
+    height: 100vh;
+    background-color: var(--light-grey);
+    font-family: var(--ff-karla);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+}
+
+.wrapper > * {
+    padding: 2.5rem;
+}
+
+.about {
+    background-color: #fff;
+    grid-column: 1 / -1;
+}
+
+.subscription {
+    background-color: var(--cyan);
+}
+
+.why-us {
+    background-color: var(--light-cyan);
+}
+
+.subscription *,
+.why-us * {
+    color: #fff;
+}
