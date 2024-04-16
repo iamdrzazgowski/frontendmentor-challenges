@@ -142,7 +142,7 @@ body {
     color: var(--bright-yellow);
 }
 
-@media (max-width: 784px) {
+@media (max-width: 680px) {
     body {
         min-height: calc(100vh - 2rem);
         padding: 2rem;
