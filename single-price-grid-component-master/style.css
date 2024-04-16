@@ -142,7 +142,7 @@ body {
     color: var(--bright-yellow);
 }
 
-@media (max-width: 680px) {
+@media (max-width: 785px) {
     body {
         min-height: calc(100vh - 2rem);
         padding: 2rem;
@@ -150,6 +150,7 @@ body {
 
     .wrapper {
         grid-template-columns: 1fr;
+        max-width: 400px;
     }
 
     .wrapper > * {
