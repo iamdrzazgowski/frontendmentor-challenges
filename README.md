@@ -1,4 +1,4 @@
-# Frontend Mentor Challenges Solutions
+# Frontend Mentor Challenges Solutions (HTML and CSS)
 
 ## Overview
 
